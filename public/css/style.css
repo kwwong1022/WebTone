@@ -1,0 +1,103 @@
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+    color: #1b1b1b;
+}
+
+html {
+    height: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: rgba(0, 0, 0, 1);
+    /* background-color: rgba(0, 0, 0, 1); */
+
+    overflow-x: hidden;
+}
+
+/* sketch */
+.sketch-container {
+    position: absolute; top: 0; 
+    width: 100%; height: 100%;
+}
+#background-sketch {
+    width: 100%; height: 100%;
+}
+
+/* main-body */
+.main-body {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+}
+.main-body .title {
+    font-size: 3.5rem;
+    text-align: center;
+    color: rgba(252, 252, 252, 1);
+    margin-top: 30vh;
+}
+.main-body .sub-title {
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+    color: rgba(252, 252, 252, 1);
+}
+.main-body .input-card-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.main-body .input-card {
+    max-width: 600px;
+    min-height: 130px;
+    width: 60%;
+    margin-top: 1.5rem;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, .6);
+    padding: 1rem 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-body .input-card #web-link {
+    width: 80%; height: 2rem;
+    border: none;
+    border-radius: 5px;
+    padding: 0 1rem 0;
+}
+.main-body .input-card #btn-submit {
+    height: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    padding: .45rem 1rem 0rem;
+    margin-left: 1rem;
+    font-size: .9rem;
+    cursor: pointer;
+}
+.main-body .result-card-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.main-body #result-card-container {
+    width: 100%;
+    max-width: 600px;
+}
+.main-body .card {
+    border-radius: 5px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    padding: .5rem 1rem .5rem;
+    margin: 1rem 0 1rem;
+    background-color: rgba(252, 252, 252, .7);
+}

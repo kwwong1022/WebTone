@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/font_awesome/all.css">
+    <!-- style -->
+    <!-- <link rel="stylesheet" href="/css/home.css"> -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- font-family: 'Quicksand', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
+    <!-- script -->
+    <script src="/js/p5.js"></script>
+    <script src="https://kit.fontawesome.com/c974aabfe2.js" crossorigin="anonymous"></script>
+    <title>Web Tone</title>
+</head>
+
+<body>
+    <!-- sketch.js -->
+    <div class="sketch-container">
+        <div id="background-sketch"></div>
+    </div>
+
+    <div class="main-body">
+        <!-- title -->
+        <div class="title">Web Tone</div>
+        <div class="sub-title">What's the tone of the web?</div>
+
+        <!-- input card -->
+        <div class="input-card-container">
+            <div class="input-card">
+                <input type="text" id="web-link" name="web-link" placeholder="www.example.com">
+                <div id="btn-submit">submit</div>
+            </div>
+        </div>
+
+        <!-- result-cards -->
+        <div class="result-card-container">
+            <div id="result-card-container"></div>
+        </div>
+
+        <!-- fetch html holder -->
+        <div id="fetch-html-container" style="display: none;"></div>
+    </div>
+
+    <!-- footer -->
+    <div style="width: 15px; height: 15px; position: absolute; bottom: 5%; left: 5%; background-color: rgba(255, 255, 255, .9);"></div>
+    <div style="position: absolute; bottom: 4.78%; left: 7%; color: rgba(255, 255, 255, .9); font-weight: 300;">WEB TONE 2022</div>
+    <div style="position: absolute; bottom: 4.78%; right: 5%; font-weight: 300;">
+        <span style="color: rgba(255, 255, 255, .9); font-weight: 300;" onclick="alert('/web-tone/get-tone-json?link=linkStr')">API</span>
+        <a style="color: rgba(255, 255, 255, .9); font-weight: 300; margin-left: 2rem;" target="_blank" href="https://github.com/kwwong1022/WebTone">GitHub</a>
+    </div>
+
+    <!-- script -->
+    <script src= "./js/app.js"></script>
+    <script src= "./js/background-s.js"></script>
+</body>
+
+</html>
